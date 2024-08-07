@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -38,3 +39,56 @@ body {
         display:none;
     }
 }
+=======
+:root {
+  --letra-navbar: #00adf1;
+  --letra-body: #054752;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: sans-serif, Helvetica, Arial;
+}
+
+main {
+  flex-grow: 1;
+  color: var(--letra-body);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.f-nav {
+  color: var(--letra-navbar);
+  font-weight: bold;
+}
+
+.f-nav:hover {
+  color: #0093cd;
+  transition: 0.3s;
+}
+
+/* Estilos del navbar */
+
+.brand {
+  height: 100px;
+  width: 161px;
+}
+
+.nav-link:active {
+  color: var(--letra-navbar);
+}
+
+@media screen and (max-width: 990px) {
+  .responsive-toogle {
+    display: none;
+  }
+}
+>>>>>>> navbar
