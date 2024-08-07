@@ -4,32 +4,6 @@
 }
 
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-/* section 1, zona banner */
-.div-banner {
-  width: 100%;
-}
-
-.img-banner {
-  width: 100%;
-  height: 50vh;
-  object-fit: cover;
-  object-position: 50% 50%;
-  position: relative;
-  filter: brightness(80%);
-}
-.overlay {
-  position: absolute;
-  top: 1em;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  color: white;
-}
-
-body {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -40,7 +14,7 @@ main {
   flex-grow: 1;
   color: var(--letra-body);
 }
-
+/* estilos del navbar */
 .navbar {
   position: fixed;
   background-color: #f0f0f0;
@@ -60,8 +34,6 @@ main {
   transition: 0.3s;
 }
 
-/* Estilos del navbar */
-
 .brand {
   height: 100px;
   width: 161px;
@@ -71,8 +43,55 @@ main {
   color: var(--letra-navbar);
 }
 
+/* section 1, zona banner */
+.div-banner {
+  width: 100%;
+}
+
+.img-banner {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  object-position: 50% 50%;
+  position: relative;
+  filter: brightness(80%);
+
+}
+
+.overlay {
+  position: absolute;
+  top: 2em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  color: white;
+
+}
+
 /* Estilos del formulario de busqueda */
 .formulario-buscador {
+    width: 90%;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.557);
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+    background-color: #cacacaa8;
+    transition: 0.5s;
+  }
+
+.btn-buscador {
+    background-color: var(--letra-navbar);
+    color:white;
+    font-weight: bold;
+}
+.btn-buscador:hover {
+    background-color: #0093cd;
+    color:white;
 }
 
 @media screen and (max-width: 990px) {
