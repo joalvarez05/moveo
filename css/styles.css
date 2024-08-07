@@ -1,6 +1,6 @@
 :root {
   --letra-navbar: #00adf1;
-  --letra-body: #054752;
+  --letra-body: #054752b7;
 }
 
 body {
@@ -55,7 +55,6 @@ main {
   object-position: 50% 50%;
   position: relative;
   filter: brightness(80%);
-
 }
 
 .overlay {
@@ -66,42 +65,59 @@ main {
   bottom: 0;
   text-align: center;
   color: white;
-
 }
 
 /* Estilos del formulario de busqueda */
 .formulario-buscador {
-    width: 90%;
-    border-radius: 10px;
-    border:none;
-    box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.557);
+  width: 90%;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.557);
 }
 
 .form-control:focus,
 .form-select:focus {
-    box-shadow: none;
-    background-color: #cacacaa8;
-    transition: 0.5s;
-  }
+  box-shadow: none;
+  background-color: #cacacaa8;
+  transition: 0.5s;
+}
 
 .btn-buscador {
-    background-color: var(--letra-navbar);
-    color:white;
-    font-weight: bold;
+  background-color: var(--letra-navbar);
+  color: white;
+  font-weight: bold;
 }
 .btn-buscador:hover {
-    background-color: #0093cd;
-    color:white;
+  background-color: #0093cd;
+  color: white;
 }
+
+/* estilos de grilla del section */
+
+.personal{
+    display:flex;
+    align-items: center;
+}
+/* .asd {
+    text-align: justify;
+} */
 
 @media screen and (max-width: 990px) {
   .responsive-toogle {
     display: none;
   }
-}
 
-@media screen and (max-width: 960px) {
   .overlay {
     display: none;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group .form-control,
+  .input-group .form-select,
+  .input-group .btn {
+    width: 100%;
   }
 }
