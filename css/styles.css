@@ -1,0 +1,178 @@
+:root {
+  --letra-navbar: #00adf1;
+  --letra-body: #3a646bb9;
+  --letra-background: #054652;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: sans-serif, Helvetica, Arial;
+}
+
+main {
+  flex-grow: 1;
+  color: var(--letra-body);
+}
+/* estilos del navbar */
+.navbar {
+  position: fixed;
+  background-color: #f0f0f0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.f-nav {
+  color: var(--letra-navbar);
+  font-weight: bold;
+}
+
+.f-nav:hover {
+  color: #0093cd;
+  transition: 0.3s;
+}
+
+.brand {
+  height: 100px;
+  width: 161px;
+}
+
+.nav-link:active {
+  color: var(--letra-navbar);
+}
+
+/* section 1, zona banner */
+.div-banner {
+  width: 100%;
+}
+
+.img-banner {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  object-position: 50% 50%;
+  position: relative;
+  filter: brightness(80%);
+}
+
+.overlay {
+  position: absolute;
+  top: 2em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  color: white;
+}
+
+/* Estilos del formulario de busqueda */
+.formulario-buscador {
+  width: 90%;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.557);
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  background-color: #cacacaa8;
+  transition: 0.5s;
+}
+
+.btn-buscador {
+  background-color: var(--letra-navbar);
+  color: white;
+  font-weight: bold;
+}
+.btn-buscador:hover {
+  background-color: #0093cd;
+  color: white;
+}
+
+/* estilos de grilla del section */
+
+.centrado {
+  display: flex;
+  align-items: center;
+}
+
+/*  Estilos section 3 */
+.bg-oscuro {
+  background-color: var(--letra-background);
+}
+
+.img-autobus {
+  max-width: 600px;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* estilos section 4 */
+
+.bg-claro {
+  background-color: var(--letra-navbar);
+}
+
+/* Estilos del footer */
+.link-footer {
+  color: #7a7a7a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-footer:hover {
+  color: var(--letra-navbar);
+}
+
+@media screen and (max-width: 576px) {
+  .foot {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
+  
+  .f-nav:hover {
+    color:#616161;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .responsive-toogle {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group .form-control,
+  .input-group .form-select,
+  .input-group .btn {
+    width: 100%;
+  }
+  #masDestinos {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .oculto {
+    display: none;
+  }
+  
+}
