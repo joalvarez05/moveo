@@ -103,24 +103,49 @@ main {
 /*  Estilos section 3 */
 .bg-oscuro {
   background-color: var(--letra-background);
-
 }
 
 .img-autobus {
   max-width: 600px;
-  max-height:480px;
-  object-fit:cover;
+  max-height: 480px;
+  object-fit: cover;
   border-radius: 10px;
-  width:100%
+  width: 100%;
 }
 
 /* estilos section 4 */
 
 .bg-claro {
   background-color: var(--letra-navbar);
-  
 }
 
+/* Estilos del footer */
+.link-footer {
+  color: #7a7a7a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-footer:hover {
+  color: var(--letra-navbar);
+}
+
+@media screen and (max-width: 576px) {
+  .foot {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
+  
+  .f-nav:hover {
+    color:#616161;
+  }
+}
 
 @media screen and (max-width: 990px) {
   .responsive-toogle {
@@ -140,8 +165,14 @@ main {
   .input-group .btn {
     width: 100%;
   }
-  #masDestinos{
-    text-align:center;
-
+  #masDestinos {
+    text-align: center;
   }
+}
+
+@media (min-width: 992px) {
+  .oculto {
+    display: none;
+  }
+  
 }
