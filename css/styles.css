@@ -1,6 +1,7 @@
 :root {
   --letra-navbar: #00adf1;
-  --letra-body: #054752b7;
+  --letra-body: #3a646bb9;
+  --letra-background: #054652;
 }
 
 body {
@@ -94,13 +95,16 @@ main {
 
 /* estilos de grilla del section */
 
-.personal{
-    display:flex;
-    align-items: center;
+.personal {
+  display: flex;
+  align-items: center;
 }
-/* .asd {
-    text-align: justify;
-} */
+
+/*  Estilos section 3 */
+.bg-solid {
+  background-color: var(--letra-background);
+
+}
 
 @media screen and (max-width: 990px) {
   .responsive-toogle {
