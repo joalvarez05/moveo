@@ -95,7 +95,7 @@ main {
 
 /* estilos de grilla del section */
 
-.personal {
+.centrado {
   display: flex;
   align-items: center;
 }
@@ -104,6 +104,13 @@ main {
 .bg-solid {
   background-color: var(--letra-background);
 
+}
+.img-autobus {
+  max-width: 600px;
+  max-height:480px;
+  object-fit:cover;
+  border-radius: 10px;
+  width:100%
 }
 
 @media screen and (max-width: 990px) {
@@ -124,4 +131,7 @@ main {
   .input-group .btn {
     width: 100%;
   }
+  /* section {
+    text-align: center;
+  } */
 }
