@@ -101,10 +101,11 @@ main {
 }
 
 /*  Estilos section 3 */
-.bg-solid {
+.bg-oscuro {
   background-color: var(--letra-background);
 
 }
+
 .img-autobus {
   max-width: 600px;
   max-height:480px;
@@ -112,6 +113,14 @@ main {
   border-radius: 10px;
   width:100%
 }
+
+/* estilos section 4 */
+
+.bg-claro {
+  background-color: var(--letra-navbar);
+  
+}
+
 
 @media screen and (max-width: 990px) {
   .responsive-toogle {
@@ -131,7 +140,8 @@ main {
   .input-group .btn {
     width: 100%;
   }
-  /* section {
-    text-align: center;
-  } */
+  #masDestinos{
+    text-align:center;
+
+  }
 }
