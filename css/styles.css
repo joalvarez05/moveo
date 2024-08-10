@@ -12,6 +12,7 @@ body {
 }
 
 main {
+  margin-top:60px;
   flex-grow: 1;
   color: var(--letra-body);
 }
@@ -135,6 +136,21 @@ main {
   color: var(--letra-navbar);
 }
 
+
+/* Estilos de la pagina "Seguridad.html" */
+
+.color-title {
+  color:var(--letra-background);
+  font-weight: bold; 
+}
+.d-centrado {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+
 @media screen and (max-width: 576px) {
   .foot {
     flex-direction: column;
@@ -144,6 +160,10 @@ main {
   
   .f-nav:hover {
     color:#616161;
+  }
+  .medio{
+    text-align: center!important;
+    letter-spacing: 10px;
   }
 }
 
