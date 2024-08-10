@@ -1,5 +1,5 @@
 :root {
-  --letra-navbar: #00adf1;
+  --letra-navbar: #0db4f6;
   --letra-body: #3a646bb9;
   --letra-background: #054652;
 }
@@ -12,6 +12,7 @@ body {
 }
 
 main {
+  margin-top:60px;
   flex-grow: 1;
   color: var(--letra-body);
 }
@@ -103,24 +104,68 @@ main {
 /*  Estilos section 3 */
 .bg-oscuro {
   background-color: var(--letra-background);
-
 }
 
 .img-autobus {
   max-width: 600px;
-  max-height:480px;
-  object-fit:cover;
+  max-height: 480px;
+  object-fit: cover;
   border-radius: 10px;
-  width:100%
+  width: 100%;
 }
 
 /* estilos section 4 */
 
 .bg-claro {
   background-color: var(--letra-navbar);
-  
 }
 
+/* Estilos del footer */
+.link-footer {
+  color: #7a7a7a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-footer:hover {
+  color: var(--letra-navbar);
+}
+
+
+/* Estilos de la pagina "Seguridad.html" */
+
+.color-title {
+  color:var(--letra-background);
+  font-weight: bold; 
+}
+.d-centrado {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+
+@media screen and (max-width: 576px) {
+  .foot {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
+  
+  .f-nav:hover {
+    color:#616161;
+  }
+  .medio{
+    text-align: center!important;
+    letter-spacing: 10px;
+  }
+}
 
 @media screen and (max-width: 990px) {
   .responsive-toogle {
@@ -140,8 +185,14 @@ main {
   .input-group .btn {
     width: 100%;
   }
-  #masDestinos{
-    text-align:center;
-
+  #masDestinos {
+    text-align: center;
   }
+}
+
+@media (min-width: 992px) {
+  .oculto {
+    display: none;
+  }
+  
 }
