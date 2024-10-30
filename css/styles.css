@@ -37,8 +37,8 @@ main {
 }
 
 .brand {
-  height: 100px;
-  width: 161px;
+  height: 70px;
+  width: 80px;
 }
 
 .nav-link:active {
@@ -131,7 +131,9 @@ main {
 
 .foot {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  align-self: center;
 }
 
 .link-footer:hover {
